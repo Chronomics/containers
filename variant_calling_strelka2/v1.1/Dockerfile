@@ -49,7 +49,5 @@ RUN git clone https://github.com/Illumina/strelka.git && cd strelka && git check
 
 WORKDIR /usr/local/bin/
 RUN git clone https://github.com/enasequence/cramtools.git
-RUN alias cramtools='java -jar /usr/local/bin/cramtools/cramtools-3.0.jar'
-ENV PATH=$PATH:/usr/local/bin/cramtools/
 
 ################## END OF DOCKERFILE ######################
